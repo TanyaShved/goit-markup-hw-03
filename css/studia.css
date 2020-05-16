@@ -1,0 +1,169 @@
+.hero {
+  text-align: center;
+
+  background-color: var(--primary-bg-color);
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-list .item {
+  width: 278px;
+}
+
+.benefits-list .item + .item {
+  margin-left: 30px;
+}
+
+.section-first {
+  padding-top: 94px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-first-text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.occupation {
+  display: flex;
+}
+
+.occupation .item + .item {
+  margin-left: 30px;
+}
+
+.section-block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-second-subtitle {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--primary-white-color);
+  background-color: #2f303a;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ourteam {
+  background-color: var(--primary-bg-color);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.team-foto {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team-item {
+  width: 278px;
+  margin: 15px;
+  margin-right: 13px;
+
+  text-align: center;
+}
+
+.section-third-subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.section-third-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon .item {
+  width: 44px;
+  height: 44px;
+
+  outline: 2px solid violet;
+}
+
+.icon .item + .item {
+  margin-left: 11px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients .item {
+  width: 175px;
+  height: 90px;
+
+  outline: 2px solid violet;
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+}

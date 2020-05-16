@@ -1,0 +1,249 @@
+/* цвет текста для футера rgba(255, 255, 255, 0.6);*/
+/* цвет основного текста #757575; */
+/* вторичный цвет текста  #212121;*/
+/* белый #FFFFFF  */
+/* акцент #2196F3; */
+/* вторичный цвет фона #F5F4FA; */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #f5f4fa;
+  --secondary-bg-color: #2f303a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-footer {
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo-first {
+  color: #000000;
+}
+
+.logo-second {
+  color: var(--primary-white-color);
+}
+/* Навигация сайта */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
+
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.address-nav {
+  display: flex;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address-nav .item + .item {
+  margin-left: 50px;
+}
+
+.address-nav .link {
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* стили кнопок */
+
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* стили подвала */
+
+footer {
+  background-color: var(--secondary-bg-color);
+}
+
+.contacts-link {
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contacts-link .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+}
+
+b {
+  display: block;
+  padding-top: 56px;
+  margin-bottom: 21px;
+  color: var(--primary-white-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.signature {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 21px;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  display: block;
+  padding-top: 48px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin-left: 179px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list .item {
+  width: 44px;
+  height: 44px;
+
+  outline: 2px solid violet;
+}
+
+.footer-list .item + .item {
+  margin-left: 11px;
+}
+
+.footer-button {
+  margin-left: 102px;
+}
+
+/* тут не знаю как по другому сделать */
+.btn {
+  margin-left: 282px;
+}
