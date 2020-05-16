@@ -91,6 +91,11 @@ h1 {
   letter-spacing: 0.06em;
 }
 
+.projects-foto {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .projects-type {
   margin-top: 0;
   margin-bottom: 20px;
@@ -105,7 +110,8 @@ h1 {
 }
 
 .projects-text {
-  width: 332px;
+  margin: 0;
+  width: 380px;
   padding-right: 24px;
   padding-left: 24px;
 

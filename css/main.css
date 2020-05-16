@@ -197,8 +197,8 @@ b {
 
 .signature {
   margin: 0;
-  margin-top: 18px;
-  margin-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 
   color: rgba(255, 255, 255, 0.4);
 
