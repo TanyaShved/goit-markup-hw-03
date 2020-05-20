@@ -15,6 +15,12 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -34,13 +40,30 @@ body {
   font-weight: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .main-nav {
@@ -48,25 +71,18 @@ body {
   align-items: center;
 }
 
+/* Лого */
+
 .logo {
+  display: block;
   text-decoration: none;
+
   color: var(--accent-color);
 
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo-footer {
-  color: var(--accent-color);
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  text-decoration: none;
   letter-spacing: 0.03em;
 }
 
@@ -77,17 +93,25 @@ body {
 .logo-second {
   color: var(--primary-white-color);
 }
+
+.logo.basement {
+  padding-top: 48px;
+  margin-bottom: 10px;
+}
+
 /* Навигация сайта */
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo.head {
+  margin-right: 85px;
 }
 
 .site-nav {
   display: flex;
-  margin-left: 86px;
 
   font-weight: 500;
   font-size: 14px;
@@ -95,8 +119,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-nav .item + .item {
-  margin-left: 50px;
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
 }
 
 .site-nav .link {
@@ -127,8 +155,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.address-nav .item + .item {
-  margin-left: 50px;
+.address-nav .item {
+  margin-right: 50px;
+}
+
+.address-nav .item:last-child {
+  margin-right: 0;
 }
 
 .address-nav .link {
@@ -168,7 +200,13 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
+.nav-basement {
+  display: flex;
+  align-items: baseline;
+}
+
 .contacts-link {
+  flex-direction: column;
   color: var(--primary-white-color);
 
   font-style: normal;
@@ -177,7 +215,16 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.contacts-text {
+  margin: 0;
+}
+
+.address-box {
+  margin-right: 69px;
+}
+
 .contacts-link .link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
@@ -185,7 +232,6 @@ footer {
 
 b {
   display: block;
-  padding-top: 56px;
   margin-bottom: 21px;
   color: var(--primary-white-color);
 
@@ -208,21 +254,6 @@ b {
   letter-spacing: 0.03em;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo-footer {
-  display: block;
-  padding-top: 48px;
-  margin-bottom: 10px;
-}
-
-.footer-link {
-  margin-left: 179px;
-}
-
 .footer-list {
   display: flex;
   justify-content: center;
@@ -231,19 +262,25 @@ b {
 .footer-list .item {
   width: 44px;
   height: 44px;
+  margin-right: 11px;
 
   outline: 2px solid violet;
 }
 
-.footer-list .item + .item {
-  margin-left: 11px;
+.footer-list .item:last-child {
+  margin-right: 0;
 }
 
 .footer-button {
-  margin-left: 102px;
+  margin-left: 93px;
 }
 
 /* тут не знаю как по другому сделать */
 .btn {
   margin-left: 282px;
+}
+
+.container.basement {
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
