@@ -156,6 +156,7 @@ body {
 }
 
 .address-nav .item {
+  display: block;
   margin-right: 50px;
 }
 
